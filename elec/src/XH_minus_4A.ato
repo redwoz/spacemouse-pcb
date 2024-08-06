@@ -1,0 +1,11 @@
+component XH_minus_4A:
+    # component XH_minus_4A
+    footprint = "CONN-TH_4P-P2.50_XH-4A"
+    lcsc_id = "C37815"
+    mpn = "C37815"
+    # pins
+    signal _1 ~ pin 1
+    signal _2 ~ pin 2
+    signal _3 ~ pin 3
+    signal _4 ~ pin 4
+

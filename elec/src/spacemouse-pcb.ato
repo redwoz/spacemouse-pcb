@@ -1,2 +1,67 @@
+# from "generics/resistors.ato" import Resistor
+from "KH_minus_A2541WV_minus_12P.ato" import KH_minus_A2541WV_minus_12P
+from "XH_minus_4A.ato" import XH_minus_4A
+
+component ProMicro:
+    footprint = "ProMicro"
+    mpn = "ProMicro"
+    signal GND ~ pin 3
+    signal GND ~ pin 4
+    signal VCC ~ pin 21
+    signal GND ~ pin 23
+
 module SpacemousePcb:
-    signal gnd
+    signal GND
+    signal VCC
+
+    # r_top = new Resistor
+    # r_top.footprint = "R0402"
+    # r_top.value = 100kohm +/- 10%
+
+    # r_bottom = new Resistor
+    # r_bottom.footprint = "R0402"
+    # r_bottom.value = 200kohm +/- 10%
+
+    # top ~ r_top.p1; r_top.p2 ~ out
+    # out ~ r_bottom.p1; r_bottom.p2 ~ bottom
+
+    pm = new ProMicro
+    pm.GND ~ GND
+    pm.VCC ~ VCC
+
+    PMconnA = new KH_minus_A2541WV_minus_12P
+    PMconnA.3 ~ GND
+    PMconnA.4 ~ GND
+
+    PMconnB = new KH_minus_A2541WV_minus_12P
+    PMconnB.9 ~ VCC
+    PMconnB.11 ~ GND
+
+    joyA = new XH_minus_4A
+    joyA.designator = "A"
+    joyA.1 ~ GND
+    joyA.2 ~ VCC
+    # joyA.3 ~ joyAx
+    # joyA.4 ~ joyAy
+
+    joyB = new XH_minus_4A
+    joyB.designator = "B"
+    joyB.1 ~ GND
+    joyB.2 ~ VCC
+    # joyB.3 ~ joyBx
+    # joyB.4 ~ joyBy
+
+    joyC = new XH_minus_4A
+    joyC.designator = "C"
+    joyC.1 ~ GND
+    joyC.2 ~ VCC
+    # joyC.3 ~ joyCx
+    # joyC.4 ~ joyCy
+
+    joyD = new XH_minus_4A
+    joyD.designator = "D"
+    joyD.1 ~ GND
+    joyD.2 ~ VCC
+    # joyD.3 ~ joyDx
+    # joyD.4 ~ joyDy
+  

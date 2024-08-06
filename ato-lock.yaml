@@ -1,0 +1,310 @@
+poses:
+  schematic:
+    0c9100d3:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 150.0
+        y: -90.0
+      rotation: 0
+    0ea7dbbb:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 0.0
+        y: 45.0
+      rotation: 0
+    104af7c0:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -135.0
+        y: -165.0
+      rotation: 0
+    1b90564a:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -225.0
+        y: 105.0
+      rotation: 0
+    239cfd51:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 285.0
+        y: 135.0
+      rotation: 0
+    2fb6a932:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -75.0
+        y: 255.0
+      rotation: 0
+    3304a1d7:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 300.0
+        y: -75.0
+      rotation: 0
+    3887413c:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -255.0
+        y: 180.0
+      rotation: 0
+    4426447a:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 75.0
+        y: 60.0
+      rotation: 0
+    448de99f:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 105.0
+        y: 120.0
+      rotation: 0
+    45710bba:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 345.0
+        y: 45.0
+      rotation: 0
+    46c354f8:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 165.0
+        y: 105.0
+      rotation: 0
+    4caa59f2:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -105.0
+        y: -105.0
+      rotation: 0
+    5025c757:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -105.0
+        y: -60.0
+      rotation: 0
+    53f46d75:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 105.0
+        y: -75.0
+      rotation: 0
+    555b0214:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 270.0
+        y: -180.0
+      rotation: 0
+    570c21f6:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -255.0
+        y: -105.0
+      rotation: 0
+    572fee30:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 165.0
+        y: 210.0
+      rotation: 0
+    63186b43:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 90.0
+        y: 165.0
+      rotation: 0
+    7126d551:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 360.0
+        y: 0.0
+      rotation: 0
+    7889b14f:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -165.0
+        y: 150.0
+      rotation: 0
+    81adad95:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -165.0
+        y: 15.0
+      rotation: 0
+    82ceb4ca:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 150.0
+        y: -150.0
+      rotation: 0
+    859ca5b1:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 135.0
+        y: 60.0
+      rotation: 0
+    87cf3ec0:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 0.0
+        y: 45.0
+      rotation: 0
+    8dbd973c:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 240.0
+        y: 180.0
+      rotation: 0
+    92a0e28e:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 255.0
+        y: 30.0
+      rotation: 0
+    94d1867c:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 375.0
+        y: 90.0
+      rotation: 0
+    a04b1e61:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -330.0
+        y: 90.0
+      rotation: 0
+    a15153e3:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 30.0
+        y: -90.0
+      rotation: 0
+    b01c4862:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 15.0
+        y: -135.0
+      rotation: 0
+    b249275e:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -165.0
+        y: -60.0
+      rotation: 0
+    b4c0c52f:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 270.0
+        y: -30.0
+      rotation: 0
+    be3eb592:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 120.0
+        y: -15.0
+      rotation: 0
+    c2c5b962:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 195.0
+        y: 150.0
+      rotation: 0
+    c481a1d1:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -330.0
+        y: 135.0
+      rotation: 0
+    cfdbef39:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 0.0
+        y: 75.0
+      rotation: 0
+    dbdf88ab:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 240.0
+        y: 90.0
+      rotation: 0
+    ddce2f45:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 330.0
+        y: -150.0
+      rotation: 0
+    eb169091:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 405.0
+        y: -45.0
+      rotation: 0
+    ef9f4cbd:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 390.0
+        y: -105.0
+      rotation: 0
+    efe1a124:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 60.0
+        y: 15.0
+      rotation: 0
+    elec/src/spacemouse-pcb.ato:SpacemousePcb::r_bottom:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: 150.0
+        y: -75.0
+      rotation: 0
+    elec/src/spacemouse-pcb.ato:SpacemousePcb::r_top:
+      mirror_x: false
+      mirror_y: false
+      position:
+        x: -15.0
+        y: -120.0
+      rotation: 0
