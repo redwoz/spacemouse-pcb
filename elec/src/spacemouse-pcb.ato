@@ -1,67 +1,99 @@
-# from "generics/resistors.ato" import Resistor
-from "KH_minus_A2541WV_minus_12P.ato" import KH_minus_A2541WV_minus_12P
+from "generics/capacitors.ato" import Capacitor
 from "XH_minus_4A.ato" import XH_minus_4A
 
 component ProMicro:
     footprint = "ProMicro"
     mpn = "ProMicro"
+
+    # Side A: 1...
     signal GND ~ pin 3
     signal GND ~ pin 4
+    signal A6 ~ pin 7
+    signal A7 ~ pin 9
+    signal A8 ~ pin 11
+    signal A9 ~ pin 12
+
+    # Side B: 13...
+    signal A0 ~ pin 17
+    signal A1 ~ pin 18
+    signal A2 ~ pin 19
+    signal A3 ~ pin 20
     signal VCC ~ pin 21
     signal GND ~ pin 23
+
+component Thumbstick:
+    footprint = "CONN-TH_4P-P2.50_XH-4A"
+    mpn = "Thumbstick"
+    signal GND ~ pin 1
+    signal VCC ~ pin 2
+    signal X ~ pin 3
+    signal Y ~ pin 4
 
 module SpacemousePcb:
     signal GND
     signal VCC
 
-    # r_top = new Resistor
-    # r_top.footprint = "R0402"
-    # r_top.value = 100kohm +/- 10%
-
-    # r_bottom = new Resistor
-    # r_bottom.footprint = "R0402"
-    # r_bottom.value = 200kohm +/- 10%
-
-    # top ~ r_top.p1; r_top.p2 ~ out
-    # out ~ r_bottom.p1; r_bottom.p2 ~ bottom
-
     pm = new ProMicro
+    pm.designator = "U1"
     pm.GND ~ GND
     pm.VCC ~ VCC
 
-    PMconnA = new KH_minus_A2541WV_minus_12P
-    PMconnA.3 ~ GND
-    PMconnA.4 ~ GND
 
-    PMconnB = new KH_minus_A2541WV_minus_12P
-    PMconnB.9 ~ VCC
-    PMconnB.11 ~ GND
+    tsA = new Thumbstick
+    tsA.designator = "A"
+    tsA.GND ~ GND
+    tsA.VCC ~ VCC
+    tsA.X ~ pm.A1
+    tsA.Y ~ pm.A0
 
-    joyA = new XH_minus_4A
-    joyA.designator = "A"
-    joyA.1 ~ GND
-    joyA.2 ~ VCC
-    # joyA.3 ~ joyAx
-    # joyA.4 ~ joyAy
+    tsAc = new Capacitor
+    tsAc.value = 100nF +/- 10%
+    tsAc.voltage = "6V"
+    tsAc.footprint = "C1206"
+    tsAc.p1 ~ tsA.GND
+    tsAc.p2 ~ tsA.VCC
 
-    joyB = new XH_minus_4A
-    joyB.designator = "B"
-    joyB.1 ~ GND
-    joyB.2 ~ VCC
-    # joyB.3 ~ joyBx
-    # joyB.4 ~ joyBy
 
-    joyC = new XH_minus_4A
-    joyC.designator = "C"
-    joyC.1 ~ GND
-    joyC.2 ~ VCC
-    # joyC.3 ~ joyCx
-    # joyC.4 ~ joyCy
+    tsB = new Thumbstick
+    tsB.designator = "B"
+    tsB.GND ~ GND
+    tsB.VCC ~ VCC
+    tsB.X ~ pm.A3
+    tsB.Y ~ pm.A2
 
-    joyD = new XH_minus_4A
-    joyD.designator = "D"
-    joyD.1 ~ GND
-    joyD.2 ~ VCC
-    # joyD.3 ~ joyDx
-    # joyD.4 ~ joyDy
-  
+    tsBc = new Capacitor
+    tsBc.value = 100nF +/- 10%
+    tsBc.voltage = "6V"
+    tsBc.footprint = "C1206"
+    tsBc.p1 ~ tsB.GND
+    tsBc.p2 ~ tsB.VCC
+
+
+    tsC = new Thumbstick
+    tsC.designator = "C"
+    tsC.GND ~ GND
+    tsC.VCC ~ VCC
+    tsC.X ~ pm.A7
+    tsC.Y ~ pm.A6
+
+    tsCc = new Capacitor
+    tsCc.value = 100nF +/- 10%
+    tsCc.voltage = "6V"
+    tsCc.footprint = "C1206"
+    tsCc.p1 ~ tsC.GND
+    tsCc.p2 ~ tsC.VCC
+
+
+    tsD = new Thumbstick
+    tsD.designator = "D"
+    tsD.GND ~ GND
+    tsD.VCC ~ VCC
+    tsD.X ~ pm.A9
+    tsD.Y ~ pm.A8
+
+    tsDc = new Capacitor
+    tsDc.value = 100nF +/- 10%
+    tsDc.voltage = "6V"
+    tsDc.footprint = "C1206"
+    tsDc.p1 ~ tsD.GND
+    tsDc.p2 ~ tsD.VCC
