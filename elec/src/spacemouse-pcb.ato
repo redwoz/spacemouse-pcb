@@ -43,8 +43,8 @@ module SpacemousePcb:
     tsA.designator = "A"
     tsA.GND ~ GND
     tsA.VCC ~ VCC
-    tsA.X ~ pm.A1
-    tsA.Y ~ pm.A0
+    tsA.X ~ pm.A0
+    tsA.Y ~ pm.A1
 
     tsAc = new Capacitor
     tsAc.value = 100nF +/- 10%
@@ -58,8 +58,8 @@ module SpacemousePcb:
     tsB.designator = "B"
     tsB.GND ~ GND
     tsB.VCC ~ VCC
-    tsB.X ~ pm.A3
-    tsB.Y ~ pm.A2
+    tsB.X ~ pm.A2
+    tsB.Y ~ pm.A3
 
     tsBc = new Capacitor
     tsBc.value = 100nF +/- 10%
@@ -73,8 +73,8 @@ module SpacemousePcb:
     tsC.designator = "C"
     tsC.GND ~ GND
     tsC.VCC ~ VCC
-    tsC.X ~ pm.A7
-    tsC.Y ~ pm.A6
+    tsC.X ~ pm.A6
+    tsC.Y ~ pm.A7
 
     tsCc = new Capacitor
     tsCc.value = 100nF +/- 10%
@@ -88,8 +88,8 @@ module SpacemousePcb:
     tsD.designator = "D"
     tsD.GND ~ GND
     tsD.VCC ~ VCC
-    tsD.X ~ pm.A9
-    tsD.Y ~ pm.A8
+    tsD.X ~ pm.A8
+    tsD.Y ~ pm.A9
 
     tsDc = new Capacitor
     tsDc.value = 100nF +/- 10%
